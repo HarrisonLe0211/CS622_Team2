@@ -34,20 +34,15 @@ def read_and_write_excel(file_path):
 
 # Example usage
 file_path = 'GuestList.xlsx'  # Replace with your file path
-read_and_write_excel(file_path)
-
 
 run = True
 
 while run:
     
+    read_and_write_excel(file_path)
     print("Continue?")
     command = input()
     if command == 'N':
         run = False
         print("exiting")
-    else:
-        read_and_write_excel(file_path)
-    # Save the workbook with the changes
-    workbook.save('GuestList.xlsx')
 

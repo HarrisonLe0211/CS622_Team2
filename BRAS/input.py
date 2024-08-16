@@ -48,6 +48,6 @@ while run:
         print("exiting")
     else:
         read_and_write_excel(file_path)
+    # Save the workbook with the changes
+    workbook.save('GuestList.xlsx')
 
-# Save the workbook with the changes
-workbook.save('GuestList.xlsx')

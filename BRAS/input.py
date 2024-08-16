@@ -1,4 +1,7 @@
 import openpyxl
+import streamlit as sl
+
+sl.markdown
 
 # Load the workbook and select the active worksheet
 workbook = openpyxl.load_workbook('GuestList.xlsx')
@@ -22,7 +25,7 @@ def read_and_write_excel(file_path):
     read_cell = input("Enter the cell address to read (e.g., A1): ")
     cell_value = sheet[read_cell].value
     print(f"Value in {read_cell}: {cell_value}")
-
+    sl.markdown(f"Hi {read_cell}: {cell_value}")
     # User input for writing to a cell
     write_cell = input("Enter the cell address to write to (e.g., B2): ")
     write_value = input("Enter the value to write: ")

@@ -11,3 +11,14 @@ pip install pandas
 ```bash
 pip install openpyxl
 ```
+
+# Install Streamlit
+```bash
+pip install streamlit
+```
+
+# Host Local Streamlit
+```bash
+cd BRAS
+streamlit run streamlit_app.py
+```

@@ -22,3 +22,11 @@ pip install streamlit
 cd BRAS
 streamlit run streamlit_app.py
 ```
+
+# Conduct Analysis of Treap 
+```bash
+cd BRAS
+python treap_performance.py
+or
+python3 treap_performance.py
+```

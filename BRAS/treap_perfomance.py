@@ -138,19 +138,6 @@ def conduct_analysis(num_operations):
 
 # Step 3: Running the Analysis
 
-# Run the analysis with 1000 operations
-# num_operations = 1000
-# average_insertion_time, average_search_time, average_deletion_time, average_memory_usage = conduct_analysis(num_operations)
-
-# # Display the results
-# print('Display the results of analysis with 1000 operations')
-# print(f"Average Insertion Time: {average_insertion_time:.6f} seconds")
-# print(f"Average Search Time: {average_search_time:.6f} seconds")
-# print(f"Average Deletion Time: {average_deletion_time:.6f} seconds")
-# print(f"Average Memory Usage: {average_memory_usage / 1024:.2f} KB")
-# print('-------------------------------------------------')
-
-
 # Let's assume you have already run the conduct_analysis function
 # and obtained the following results:
 num_operations = 1000

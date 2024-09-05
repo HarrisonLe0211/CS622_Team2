@@ -17,6 +17,11 @@ pip install openpyxl
 pip install streamlit
 ```
 
+# Install Graphviz
+```bash
+pip install graphviz
+```
+
 # Host Local Streamlit
 ```bash
 cd BRAS
@@ -29,4 +34,12 @@ cd BRAS
 python treap_performance.py
 or
 python3 treap_performance.py
+```
+
+# Compare 3 Data Structure Performance (Insert, Delete, Search)
+```bash
+cd BRAS
+python compare_performance.py
+or
+python3 compare_performance.py
 ```

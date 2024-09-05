@@ -12,7 +12,7 @@ class TreapNode:
         dob,
         id_card,
         status,
-        priority,
+        # priority,
     ):
         self.key = key  # room number
         self.room_type = room_type
@@ -22,7 +22,8 @@ class TreapNode:
         self.id_card = id_card
         self.hotel_id = hotel_id
         self.status = status
-        self.priority = priority
+        self.priority = random.randint(0, 99)
+        # self.priority = priority
         self.left = None
         self.right = None
 
@@ -54,7 +55,7 @@ class Treap:
         dob,
         id_card,
         status,
-        priority,
+        # priority,
     ):
         if node is None:
             return TreapNode(
@@ -66,7 +67,7 @@ class Treap:
                 dob,
                 id_card,
                 status,
-                priority,
+                # priority,
             )
 
         if key < node.key:
@@ -80,7 +81,7 @@ class Treap:
                 dob,
                 id_card,
                 status,
-                priority,
+                # priority,
             )
             if node.left.priority > node.priority:
                 node = self.rotate_right(node)
@@ -95,7 +96,7 @@ class Treap:
                 dob,
                 id_card,
                 status,
-                priority,
+                # priority,
             )
             if node.right.priority > node.priority:
                 node = self.rotate_left(node)
@@ -125,16 +126,16 @@ class Treap:
 
         return matching_rooms
 
-    def update(self, key, status, firstname, lastname, dob, id_card):
-        node = self.search(self.root, key)
-        if node:
-            node.status = status
-            node.firstname = firstname
-            node.lastname = lastname
-            node.dob = dob
-            node.id_card = id_card
-        else:
-            print("Room not found.")
+    # def update(self, key, status, firstname, lastname, dob, id_card):
+    #     node = self.search(self.root, key)
+    #     if node:
+    #         node.status = status
+    #         node.firstname = firstname
+    #         node.lastname = lastname
+    #         node.dob = dob
+    #         node.id_card = id_card
+    #     else:
+    #         print("Room not found.")
 
     def in_order_traversal(self, node, result=[]):
         if node:

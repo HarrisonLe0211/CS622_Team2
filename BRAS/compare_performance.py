@@ -3,7 +3,7 @@ import timeit
 import sortedcontainers
 import matplotlib.pyplot as plt
 
-# Skip List Implementation (Same as before)
+# Skip List Implementation 
 class Node:
     def __init__(self, value=None, level=0):
         self.value = value

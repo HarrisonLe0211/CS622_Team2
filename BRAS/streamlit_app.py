@@ -114,15 +114,9 @@ def sidebar():
             id_card = st.text_input("ID Card", placeholder="Enter Customer ID Card")
             dob = st.date_input("Date of Birth", format="MM.DD.YYYY", value=None)
             room_s = st.radio("Room Status", options=["Available", "Occupy"])
-            # priority = st.number_input(
-            #     "Priority",
-            #     value=None,
-            #     placeholder="Treap Priority",
-            #     min_value=1,
-            #     max_value=150,
-            # )
 
             if st.form_submit_button(label="Submit"):
+                start_time = time.time()
                 result = treap.insert(
                     treap.root,
                     key,
@@ -133,8 +127,10 @@ def sidebar():
                     dob,
                     id_card,
                     room_s,
-                    # priority
                 )
+                end_time = time.time()
+                runtime = end_time - start_time
+                st.toast(f"Operation Run Time: {runtime:.6f}s")
                 if result:
                     display_all_rooms()  # Get All Rooms Data
                     st.success("Insert Successfully")
@@ -176,7 +172,6 @@ for row in rooms_data.itertuples():
         row.dob,
         row.id_card,
         row.room_status,
-        # row.priority
     )
 
 sidebar()

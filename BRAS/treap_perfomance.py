@@ -173,6 +173,10 @@ results = {
 # Convert the results into a Pandas DataFrame
 df_results = pd.DataFrame(results)
 
+# Format the average times to display in seconds
+df_results["Average Time (seconds)"] = df_results["Average Time (seconds)"].apply(
+    lambda x: f"{x:.6f}" if x is not None else None
+)
 # Displaying the results in a table
 print("Experimental Results:")
 print(df_results.to_string(index=False))

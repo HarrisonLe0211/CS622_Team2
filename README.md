@@ -11,10 +11,10 @@ The team proposes a system that improves hotel management by employing a Treap, 
 # Description
 
     -   Current State of Hotel Management: Many hotels use outdated manual methods or limited software solutions. Efficient room allocation is vital for  operational efficiency, but adoption of advanced systems remains low.
-	-	Solution - Treap: The team introduces Treap, a data structure that balances tree properties and heap properties to ensure efficient insertion, search, and deletion operations. It helps handle dynamic room allocations better than traditional methods.
-	-	Alternative Structures: They also explore Red-Black Trees and Skip Lists, comparing their strengths and weaknesses to Treaps in terms of balancing complexity and performance.
-	-	Performance Analysis: Metrics such as insert, search, and delete operation times are discussed, showing Treap’s effectiveness in optimizing room allocation.
-	-	Conclusion: Treaps offer a balanced and efficient solution for hotels, though they might require custom implementation due to limited support in standard libraries.
+	-   Solution - Treap: The team introduces Treap, a data structure that balances tree properties and heap properties to ensure efficient insertion, search, and deletion operations. It helps handle dynamic room allocations better than traditional methods.
+	-   Alternative Structures: They also explore Red-Black Trees and Skip Lists, comparing their strengths and weaknesses to Treaps in terms of balancing complexity and performance.
+	-   Performance Analysis: Metrics such as insert, search, and delete operation times are discussed, showing Treap’s effectiveness in optimizing room allocation.
+	-   Conclusion: Treaps offer a balanced and efficient solution for hotels, though they might require custom implementation due to limited support in standard libraries.
 
 # Install Python Pandas Library to read Excel File
 ```bash
